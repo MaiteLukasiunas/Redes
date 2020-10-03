@@ -1,0 +1,7 @@
+ifconfig eth0 107.2.2.6/23 up
+route add default gw 107.2.2.1 eth0
+
+a2dissite 000-default.conf
+a2ensite apple.com
+a2ensite linux.org
+/etc/init.d/apache2 start

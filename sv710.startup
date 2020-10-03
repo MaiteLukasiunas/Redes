@@ -1,0 +1,7 @@
+ifconfig eth0 107.1.4.3/22 up
+route add default gw 107.1.4.1 eth0
+
+/etc/init.d/bind start
+
+mkdir -p /var/bind
+chown bind:bind /var/bind

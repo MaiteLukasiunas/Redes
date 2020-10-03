@@ -1,0 +1,10 @@
+ifconfig eth0 107.1.4.5/22 up
+route add default gw 107.1.4.1 eth0
+
+ln -s /etc/nginx/sites-available/ibm.com.conf /etc/nginx/sites-enabled/ibm.com.conf
+ln -s /etc/nginx/sites-available/support.ibm.com.conf /etc/nginx/sites-enabled/support.ibm.com.conf
+
+mkdir -p /etc/nginx/sites-available
+mkdir -p /etc/nginx/sites-enabled
+
+/etc/init.d/nginx start

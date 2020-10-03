@@ -1,0 +1,14 @@
+$TTL    60000
+@               IN      SOA     sv713.support.ibm.com.    root.713.support.ibm.com. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      sv713.support.ibm.com.
+sv113           IN      A       207.1.64.3
+
+sv108           IN      A       107.1.4.5
+www             IN      CNAME   sv708

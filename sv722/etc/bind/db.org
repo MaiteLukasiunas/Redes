@@ -1,0 +1,14 @@
+$TTL    60000
+@               IN      SOA     sv722.org.    root.org. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      sv122.org.
+sv122           IN      A       37.3.2.3
+
+linux           IN      NS      sv103.linux.org.
+sv103.linux     IN      A       107.2.2.3

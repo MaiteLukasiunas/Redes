@@ -1,0 +1,14 @@
+$TTL    60000
+@               IN      SOA     sv103.linux.org.    root.linux.org. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      sv107.linux.org.
+sv703           IN      A       107.2.2.3
+
+sv706            IN      A       107.2.2.6
+www              IN      CNAME   sv706
